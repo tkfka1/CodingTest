@@ -1,0 +1,1 @@
+def solution(d, budget): from itertools import accumulate; return len([i for i in list(accumulate(sorted(d))) if budget >= i])
