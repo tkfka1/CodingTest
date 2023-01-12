@@ -1,15 +1,11 @@
 def solution(s):
-    import re
-
     def sub(text):
-        temp = text
+        t = text
         for i in range(len(text)//2+1):
-            start = len(temp)
-            temp = temp.replace("()", "")
-            temp = temp.replace("[]", "")
-            temp = temp.replace("{}", "")
-            if temp:
-                if start == len(temp):
+            start = len(t)
+            t = t.replace("{}", "").replace("[]", "").replace("()", "")
+            if t:
+                if start == len(t):
                     return 0
             else:
                 return 1
