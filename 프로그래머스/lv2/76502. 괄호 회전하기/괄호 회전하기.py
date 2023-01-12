@@ -9,11 +9,15 @@ def solution(s):
                     return 0
             else:
                 return 1
-        
+    a = [s[i+1:] + s[:i+1] for i in range(len(s))]
+    
     answer = 0
     
-    for i in range(len(s)):
-        answer += sub(s)
-        s = s[1:] + s[0]
+    for i in a:
+        for x in range(80):
+            i = i.replace("{}", "").replace("[]", "").replace("()", "")
+        if not i:
+            answer+=1
+    
     
     return answer
