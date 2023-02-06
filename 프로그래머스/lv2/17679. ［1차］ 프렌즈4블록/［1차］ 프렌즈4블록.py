@@ -1,7 +1,6 @@
 def solution(m, n, board):
     answer = 0
     
-    
     def go(board,answer):
         answer_temp = answer
         li = [[0]*n for _ in range(m)]
