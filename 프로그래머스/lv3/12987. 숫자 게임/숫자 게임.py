@@ -16,5 +16,7 @@ def solution(A, B):
                 break
         if not B:
             break
+    
+    ## 큐를 쓰는게 더 효율적일듯
 
     return answer
