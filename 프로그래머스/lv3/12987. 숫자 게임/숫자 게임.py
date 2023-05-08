@@ -17,6 +17,6 @@ def solution(A, B):
         if not B:
             break
     
-    ## 큐를 쓰는게 더 효율적일듯
+    ## 힙을 쓰는게 더 효율적일듯
 
     return answer
