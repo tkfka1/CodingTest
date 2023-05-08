@@ -18,7 +18,7 @@ def solution(numbers):
             temp = '0'+format(i,'b')
             # print(temp)
             
-            ## 거꾸로 비트하나씩 확인
+            ## 거꾸로 비트하나씩 확인 (제일 오른쪽부터 확인할것이기 때문에)
             for index,value in enumerate(reversed(temp)):
                 ## 만약 0이면 2의 index제곱 더하고 2의 index-1제곱 빼기
                 if value == '0':
