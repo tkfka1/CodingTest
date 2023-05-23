@@ -56,6 +56,7 @@ def solution(s):
                     # print(find_first)
                     
                     ## 만약 10개 100개 등등 자릿수가 올라가면 문자열길이도늘어나므로
+                    ## 매번 문자변환및 제곱연산은 무거우므로 10의배수만계산
                     if find_first%10 == 0:
                         if find_first == 10**(len(str(find_first)) - 1):
                             temp_answer += 1
