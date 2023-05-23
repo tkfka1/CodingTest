@@ -57,11 +57,11 @@ def solution(n, wires):
     ## 간선 하나씩 제거해 보면서 최저 개수 찾기
     for i in wires:
         n1 = net_visit(i[0],i[1])
-        n2 = net_visit(i[1],i[0])
+        # n2 = net_visit(i[1],i[0])
         
         # print(n1,n2)
         
-        answer = min(abs(n1-n2),answer)
+        answer = min(abs(n-(n1*2)),answer)
         
         
     return answer
