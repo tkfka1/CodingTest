@@ -1,10 +1,9 @@
-def solution(b):
+def solution(book_time):
     answer = 0
-    print(sorted(b))
     
+    ## 정보 딕셔너리에 정리
     dic = {}
-    
-    for i in b:
+    for i in book_time:
         temp = i[0].split(":")
         temp1 = i[1].split(":")
         
@@ -51,5 +50,4 @@ def solution(b):
                 answer = max(answer,room)
         t += 1
         
-    
     return answer
