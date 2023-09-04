@@ -1,2 +1,1 @@
-import re
-def solution(myStr):return [s for s in re.split('[abc]', myStr) if s] or ["EMPTY"]
+def solution(myStr):return [s for s in __import__('re').split('[abc]', myStr) if s] or ["EMPTY"]
