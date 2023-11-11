@@ -5,15 +5,21 @@
 3. 입력받은 정보가 숫자로만 되어 있는지 확인한다.
 '''
 
-test_num = "10000"
+test_num = "100000000"
 
 num = test_num
 
 print(num)
 
 if num.isdigit():
+    temp = ""
     #print("숫자 입니다.")
     stack = 0
     for i in reversed(num):
+        if stack == 3:
+            temp = "," + temp
+            stack = 0
+        temp = i + temp
+        stack += 1
 
-        print(i, end = ",")
+    print(temp)
