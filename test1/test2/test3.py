@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 def find(x):
     stack = 1
     plus = 1
@@ -40,15 +39,3 @@ def find(x):
 
 
 find(2)
-=======
-x = 2
-t = 0
-end = int(input())
-while True:
-    if t == end:
-        print(x)
-        break
-    else:
-        t += 1
-        x = 2*x - 1
->>>>>>> 495900bbb5546bd4f2f8f51f79bfca60fbc595fe
